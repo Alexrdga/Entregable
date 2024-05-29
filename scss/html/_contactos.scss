@@ -51,7 +51,7 @@
                     .btn{
                         padding: 6px 12px;
                         font-size: 16px;
-                        color: #ffffff;
+                        color: $color-blanco;
                         border: 0;
                         background-color: #51d94cb5;
                         box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
@@ -65,7 +65,7 @@
             }
         }
         .div-uno-contactos{
-            background-color: #ffffff;
+            background-color: $color-blanco;
             display: flex;
             width: 600px;
             height: 400px;

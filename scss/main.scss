@@ -55,10 +55,10 @@ header{
                 ul{
                     li{
                         .color-nav{
-                            color: #bbbbbb;
+                            color: $color-gris;
                         }
                         .color-nav:hover{
-                            color: #ffffff;
+                            color: $color-blanco;
                         }
                     }
                 }
@@ -106,10 +106,10 @@ section{
                 background-color: $color-footer;
                 .boton-ver-mas{
                     text-decoration:none;
-                    color: grey;
+                    color: $color-gris;
                 }
                 .boton-ver-mas:hover{
-                    color: #ffffff;
+                    color: $color-blanco;
                 }
             }
         }
@@ -132,7 +132,7 @@ footer{
                 padding: 0 15px;  /*sirve para dejar espacio entre arriba y abajo y izquierda y derecha*/
                 h4{
                     font-size: 20px;
-                    color: #ffffff;
+                    color: $color-blanco;
                     margin-bottom: 25px; /*es una separacion hacia abajo de 25px*/
                     font-weight: 500; /*sirve para que no se vea tan gruesa nuestra letra*/
                     border-bottom: 2px solid $color-fondo;  /*sirve para ponerle una linea debajo*/
@@ -148,13 +148,13 @@ footer{
                         a{
                             font-size: 18px;
                             text-decoration: none;
-                            color: #bbbbbb;
+                            color: $color-gris;
                             display: block;
                             margin-bottom: 15px;
                             transition: .3s ease; /*agrega una animacion y una transicion*/
                         }
                         a:hover{
-                            color: #ffffff;   /*sirve para que cuando pongas el maus arriba se ponga de otro color*/
+                            color: $color-blanco;   /*sirve para que cuando pongas el maus arriba se ponga de otro color*/
                             padding: 6px;   /*sirve para que cuando pongas el maus arriba se desplaze*/
                         }
                     }

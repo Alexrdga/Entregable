@@ -306,7 +306,7 @@ section .lista-botton .contenedor-botton .botton-item {
 }
 section .lista-botton .contenedor-botton .botton-item .boton-ver-mas {
   text-decoration: none;
-  color: grey;
+  color: #bbbbbb;
 }
 section .lista-botton .contenedor-botton .botton-item .boton-ver-mas:hover {
   color: #ffffff;
