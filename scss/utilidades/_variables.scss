@@ -1,0 +1,12 @@
+//colores
+
+$color-fondo:rgb(197,219,134);
+
+$color-footer: rgb(43,43,43);
+
+
+//mixins
+
+@mixin titulo($margin){
+    margin-left: 20px;
+}

@@ -1,0 +1,97 @@
+/*contactos*/
+.main-contactos{
+    margin-left: 1%;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    .titulo-contactos{
+        @include titulo(20px)
+    }
+    .div-container-contactos{
+        display: flex;
+        .div-formulario{
+            margin-left: 20px;
+            margin-bottom: 20px;
+            width:600px ;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            form{
+                padding: 50px 55px;
+                box-shadow: 0 0 20px rgb(0,0,0,0.2);
+                border-radius: 20px;
+                text-align: center;
+                width: 500px;
+                .sub-titulo{
+                    color: #283629;
+                    font-size: 35px;
+                }
+                .input-group{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    label{
+                        color: #283629;
+                        font-size: 15px;
+                        font-weight: 600;
+                        margin-bottom: 15px;
+                    }
+                    input, textarea{
+                        padding: 17px 25px;
+                        margin-bottom: 20px;
+                        background-color: #EDFFF0;
+                        border: 2px solid #f0faf1;
+                        color: #283629;
+                        outline: none;
+                    }
+                    
+                    input::placeholder, textarea::placeholder{
+                        color: #b5cab6;
+                    }
+                    .btn{
+                        padding: 6px 12px;
+                        font-size: 16px;
+                        color: #ffffff;
+                        border: 0;
+                        background-color: #51d94cb5;
+                        box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+                        cursor: pointer;
+                    }
+                    .btn:hover{
+                        background-color: #50E04B;
+                    }
+                    
+                }
+            }
+        }
+        .div-uno-contactos{
+            background-color: #ffffff;
+            display: flex;
+            width: 600px;
+            height: 400px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-top: 100px;
+            background-color: $color-fondo;
+            .div-redes{ /*redes sociales*/
+                width: 300px;
+                .lista-contactos{
+                    list-style: none;
+                    li{
+                        .link-contacto{
+                            text-decoration: none;
+                            color: black;
+                            .bi-twitter-x{
+                              color: black;
+                            }
+                        }
+                        .bi{
+                            font-size: 20px;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

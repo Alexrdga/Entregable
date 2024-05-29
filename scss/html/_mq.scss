@@ -1,0 +1,133 @@
+/*mq*/
+
+/*mobile*/
+
+@media only screen and (max-width: 500px){
+    /*index*/
+    main{
+        .contenedor-uno{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            .foto-de-plantas{
+                display: block;
+                grid-row: span 2;
+                grid-column:span 2 ;
+                margin-top: 55px;
+            }
+        }
+    }
+    /*productos*/
+    main{
+    .contenedor-dos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        }
+    }
+    /*contactos*/
+    .main-contactos{
+        .div-container-contactos{
+          display: block;
+          .div-uno-contactos{
+            display: block;
+            margin-top: 40px;
+            width: 300px;
+            height: 200px;
+          }
+          .div-formulario{
+            width:auto;
+          }
+       }
+    }
+    .footer-dos{
+        width: 100%;
+        position: relative;
+        bottom: 0;
+    }
+}
+
+
+
+
+
+
+/*tablet*/
+
+@media only screen and (min-width:501px) and (max-width:960px){
+    main{
+        .contenedor-uno{
+            .foto-de-plantas{
+                display: block;
+                grid-row: span 2;
+                grid-column:span 2 ;
+                margin-top: 55px;
+            }
+        }
+    }
+
+    .main-contactos{
+        .div-container-contactos{
+            display: block;
+            .div-uno-contactos{
+                display: block;
+                margin-top: 40px;
+                width: 500px;
+                height: 200px;
+                margin-left: 100px;
+            }
+        }
+    }
+
+    main{
+        .contenedor-uno{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+    }
+
+    main{
+        .contenedor-dos{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(12, 1fr);
+        }
+    }
+    .footer-dos{
+        width: 100%;
+        position: relative;
+        bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*desktop*/
+@media only screen and (min-width:961px){
+    main{
+        .contenedor-uno{
+            grid-template-columns:repeat(4, 1fr) ;
+            grid-template-rows: repeat(3, 1fr);
+            .foto-de-plantas{
+                margin-top: auto;
+                display: block;
+                grid-row: span 2;
+                grid-column:span 4 ;
+                width: 100%;
+                height: 90%;
+            }
+        }
+    }
+    .footer-dos{
+        width: 100%;
+            position:relative;
+            bottom: 0;
+    }
+}

@@ -1,0 +1,10 @@
+
+/*nosotros*/
+.main-nosotros{
+    margin-top: 70px;
+    margin-bottom: 40px;
+    margin-left: 1%;
+    .titulo-nosotros{
+        @include titulo(20px)
+    }
+}

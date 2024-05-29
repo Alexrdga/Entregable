@@ -1,0 +1,171 @@
+//nesting
+//import utilidades
+@import "utilidades/variables";
+//import html
+@import "html/productos";
+@import "html/nosotros";
+@import "html/faq";
+@import "html/contactos";
+@import "html/mq";
+
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $color-fondo;
+}
+
+/*fuentes*/
+
+.kalam-regular {    /*fuente para textos*/
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+  }
+
+  .kalam-bold { /*fuentes para titulos*/
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5em;
+  }
+
+
+/*header*/
+header{
+    display: flex;
+    align-items: center;
+    nav{
+        background-color: $color-footer;
+        width: 100%;
+        div{
+            .logo{
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+            div{
+                ul{
+                    li{
+                        .color-nav{
+                            color: #bbbbbb;
+                        }
+                        .color-nav:hover{
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nav-general{
+        position: fixed;
+        top: 0px;
+    }
+}
+
+
+/*main*/
+main{
+    div{
+        img{
+            border-radius: 8px;
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+        }
+    }
+    .contenedor-uno{
+        align-content: center;
+        margin: 20px 30px 50px 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 2fr) ;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 40px;
+        column-gap: 30px;
+    }
+}
+
+
+/*boton*/
+
+section{
+    .lista-botton{
+        list-style:none;
+        .contenedor-botton{
+            font-size: 30px;
+            text-align: center;
+            .botton-item{
+                background-color: $color-footer;
+                .boton-ver-mas{
+                    text-decoration:none;
+                    color: grey;
+                }
+                .boton-ver-mas:hover{
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+/*footer*/
+
+footer{
+    background-color: $color-footer;
+    padding: 20px 0;  /*sirve para hacer mas alto el footer*/
+    .container{
+        max-width: 100%; 
+        margin: 0 auto;   /*esto es para que no se salga de los 1200px*/
+        .footer-row{
+            display: flex;  /*es para que se pongan uno al lado del otro*/
+            flex-wrap: wrap;  /*es para que cuando se minimice la ventana vaya bajando y no se pongan en linea*/
+            .footer-links{
+                width: 25%; /*sirve para definirle un tamaño*/
+                padding: 0 15px;  /*sirve para dejar espacio entre arriba y abajo y izquierda y derecha*/
+                h4{
+                    font-size: 20px;
+                    color: #ffffff;
+                    margin-bottom: 25px; /*es una separacion hacia abajo de 25px*/
+                    font-weight: 500; /*sirve para que no se vea tan gruesa nuestra letra*/
+                    border-bottom: 2px solid $color-fondo;  /*sirve para ponerle una linea debajo*/
+                    padding-bottom: 10px; /*sirve para separar la linea que agregamos anteriormente de */
+                    display: inline-block; /*sirve para que la linea solo ocupe el ancho de mi letra*/
+                }
+                .lista-footer{
+                    list-style: none;
+                    padding: 0;
+                }
+                ul{
+                    li{
+                        a{
+                            font-size: 18px;
+                            text-decoration: none;
+                            color: #bbbbbb;
+                            display: block;
+                            margin-bottom: 15px;
+                            transition: .3s ease; /*agrega una animacion y una transicion*/
+                        }
+                        a:hover{
+                            color: #ffffff;   /*sirve para que cuando pongas el maus arriba se ponga de otro color*/
+                            padding: 6px;   /*sirve para que cuando pongas el maus arriba se desplaze*/
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*estilos generales*/
+
+/*fuentes*/
