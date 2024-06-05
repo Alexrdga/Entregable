@@ -7,12 +7,13 @@
     main{
         .contenedor-uno{
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            place-items: center;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(5, 1fr);
             .foto-de-plantas{
                 display: block;
-                grid-row: span 2;
-                grid-column:span 2 ;
+                grid-row: span ;
+                grid-column:span  ;
                 margin-top: 55px;
             }
         }
@@ -21,14 +22,15 @@
     main{
     .contenedor-dos{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
         }
     }
     /*contactos*/
     .main-contactos{
         .div-container-contactos{
-          display: block;
+            display: block;
           .div-uno-contactos{
             display: block;
             margin-top: 40px;
@@ -45,7 +47,26 @@
         position: relative;
         bottom: 0;
     }
+
+    /*preguntas frecuentes*/
+    .main-faq{
+        div{
+            display: block;
+            
+            .parrafo{
+                width: auto;
+                height: auto;
+            }
+            .img-uno, .img-dos, .img-tres, .img-cuatro{
+                margin: 10px 0px;
+                width: 100%;
+            }
+        }
+
+    }
 }
+
+
 
 
 
@@ -57,33 +78,16 @@
 @media only screen and (min-width:501px) and (max-width:960px){
     main{
         .contenedor-uno{
-            .foto-de-plantas{
-                display: block;
-                grid-row: span 2;
-                grid-column:span 2 ;
-                margin-top: 55px;
-            }
-        }
-    }
-
-    .main-contactos{
-        .div-container-contactos{
-            display: block;
-            .div-uno-contactos{
-                display: block;
-                margin-top: 40px;
-                width: 500px;
-                height: 200px;
-                margin-left: 100px;
-            }
-        }
-    }
-
-    main{
-        .contenedor-uno{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
+           
+            .foto-de-plantas{
+                display: block;
+                grid-row: span 1;
+                grid-column:span 2 ;
+                margin-top: 55px;
+            }
         }
     }
 
@@ -94,12 +98,69 @@
             grid-template-rows: repeat(12, 1fr);
         }
     }
-    .footer-dos{
-        width: 100%;
-        position: relative;
-        bottom: 0;
+
+    /*contactos*/
+    .main-contactos{
+      .div-container-contactos{
+          display: block;
+          .div-uno-contactos{
+            display: block;
+            margin-top: 40px;
+            width: 500px;
+            height: 200px;
+            margin-left: 100px;
+          }
+        } 
     }
+    /*preguntas frecuentes*/
+    .main-faq{
+        div{
+            .parrafo{
+                width: 300px;
+            }
+            .img-uno{
+                width: 500px;
+                height: 250px;
+                margin-left: 0;
+                margin-top: 70px;
+            }
+            .img-dos{
+                width: 400px;
+                height: 300px;
+                margin-right: 20px ;
+                margin-left:0;
+                margin-top: 70px;
+            }
+            .img-tres{
+                width: 400px;
+                height: 300px;
+                margin-left: 30px;
+                margin-top:30px ;
+            }
+            .img-cuatro{
+                width: 500px;
+                height: 300px;
+                margin-right: 30px;
+                margin-left:0;
+                margin-top: 30px;
+            }
+        }
+    }
+
+
+    main{
+        .footer-dos{
+            width: 100%;
+            bottom: 0;
+        }
+
+        
+    } 
+
 }
+    
+
+  
 
 
 
@@ -125,6 +186,12 @@
             }
         }
     }
+    .main-contactos{
+        .div-container-contactos{
+            display: flex;
+        }
+    }
+
     .footer-dos{
         width: 100%;
             position:relative;

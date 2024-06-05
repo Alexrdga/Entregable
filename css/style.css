@@ -1,4 +1,181 @@
 @charset "UTF-8";
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(197, 219, 134);
+}
+
+/*fuentes*/
+.kalam-regular { /*fuente para textos*/
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+}
+
+.kalam-bold { /*fuentes para titulos*/
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5em;
+}
+
+/*header*/
+header {
+  display: flex;
+  align-items: center;
+}
+header .nav-general {
+  background-color: rgb(43, 43, 43);
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+header .nav-general div .logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+header .nav-general div div ul li .color-nav {
+  color: #bbbbbb;
+}
+header .nav-general div div ul li .color-nav:hover {
+  color: #ffffff;
+}
+
+/*main*/
+main div img {
+  border-radius: 8px;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+main .contenedor-uno {
+  align-content: center;
+  margin: 20px 30px 50px 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 40px;
+  column-gap: 30px;
+}
+main .contenedor-uno .card {
+  background-color: rgb(43, 43, 43);
+  position: initial;
+}
+main .contenedor-uno .card div h5 {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.3em;
+  color: whitesmoke;
+}
+main .contenedor-uno .card div p {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  color: whitesmoke;
+}
+main .contenedor-uno .card div button {
+  border: 0;
+  background-image: linear-gradient(150deg, rgb(162, 188, 91), rgb(123, 148, 54), rgb(197, 219, 134));
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+main .contenedor-uno .card div button span {
+  background-color: #111;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+main .contenedor-uno .card div button:hover span {
+  background: none;
+}
+main .contenedor-uno .card div button:active {
+  transform: scale(0, 9);
+}
+
+/*boton*/
+section .lista-botton {
+  list-style: none;
+}
+section .lista-botton .contenedor-botton {
+  font-size: 30px;
+  text-align: center;
+}
+section .lista-botton .contenedor-botton .botton-item {
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+section .lista-botton .contenedor-botton .botton-item .boton-ver-mas {
+  text-decoration: none;
+  color: #bbbbbb;
+  background-color: #111;
+  padding: 16px 24px;
+  border-radius: 6px;
+}
+section .lista-botton .contenedor-botton .botton-item .boton-ver-mas:hover {
+  color: #ffffff;
+}
+
+/*footer*/
+footer {
+  background-color: rgb(43, 43, 43);
+  padding: 20px 0; /*sirve para hacer mas alto el footer*/
+}
+footer .container {
+  max-width: 100%;
+  margin: 0 auto; /*esto es para que no se salga de los 1200px*/
+}
+footer .container .footer-row {
+  display: flex; /*es para que se pongan uno al lado del otro*/
+  flex-wrap: wrap; /*es para que cuando se minimice la ventana vaya bajando y no se pongan en linea*/
+}
+footer .container .footer-row .footer-links {
+  width: 25%; /*sirve para definirle un tamaño*/
+  padding: 0 15px; /*sirve para dejar espacio entre arriba y abajo y izquierda y derecha*/
+}
+footer .container .footer-row .footer-links h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px; /*es una separacion hacia abajo de 25px*/
+  font-weight: 500; /*sirve para que no se vea tan gruesa nuestra letra*/
+  border-bottom: 2px solid rgb(197, 219, 134); /*sirve para ponerle una linea debajo*/
+  padding-bottom: 10px; /*sirve para separar la linea que agregamos anteriormente de */
+  display: inline-block; /*sirve para que la linea solo ocupe el ancho de mi letra*/
+}
+footer .container .footer-row .footer-links .lista-footer {
+  list-style: none;
+  padding: 0;
+}
+footer .container .footer-row .footer-links ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #bbbbbb;
+  display: block;
+  margin-bottom: 15px;
+  transition: 0.3s ease; /*agrega una animacion y una transicion*/
+}
+footer .container .footer-row .footer-links ul li a:hover {
+  color: #ffffff; /*sirve para que cuando pongas el maus arriba se ponga de otro color*/
+  padding: 6px; /*sirve para que cuando pongas el maus arriba se desplaze*/
+}
+
 /*productos*/
 main .titulo-productos {
   margin-top: 70px;
@@ -15,6 +192,49 @@ main .contenedor-dos {
   row-gap: 40px;
   column-gap: 30px;
 }
+main .contenedor-dos .card {
+  position: initial;
+}
+main .contenedor-dos div {
+  background-color: rgb(43, 43, 43);
+}
+main .contenedor-dos div div h5 {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.3em;
+  color: whitesmoke;
+}
+main .contenedor-dos div div p {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  color: whitesmoke;
+}
+main .contenedor-dos div div button {
+  border: 0;
+  background-image: linear-gradient(150deg, rgb(162, 188, 91), rgb(123, 148, 54), rgb(197, 219, 134));
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+main .contenedor-dos div div button span {
+  background-color: #111;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+main .contenedor-dos div div button:hover span {
+  background: none;
+}
+main .contenedor-dos div div button:active {
+  transform: scale(0, 9);
+}
 
 /*nosotros*/
 .main-nosotros {
@@ -25,6 +245,20 @@ main .contenedor-dos {
 .main-nosotros .titulo-nosotros {
   margin-left: 20px;
 }
+.main-nosotros div {
+  display: grid;
+  place-items: center;
+}
+.main-nosotros div .mapa {
+  width: 350px;
+  height: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main-nosotros .div-nosotros .img-vivero {
+  width: 350px;
+  height: 300px;
+}
 
 /*faq*/
 .main-faq {
@@ -34,6 +268,35 @@ main .contenedor-dos {
 }
 .main-faq .titulo-faq {
   margin-left: 20px;
+}
+.main-faq div {
+  margin-bottom: 20px;
+  display: flex;
+}
+.main-faq div .parrafo {
+  width: 600px;
+}
+.main-faq div .img-uno {
+  width: 500px;
+  height: 250px;
+  margin-left: 150px;
+}
+.main-faq div .img-dos {
+  width: 500px;
+  height: 300px;
+  margin-right: 150px;
+  margin-left: 50px;
+}
+.main-faq div .img-tres {
+  width: 500px;
+  height: 250px;
+  margin-left: 150px;
+}
+.main-faq div .img-cuatro {
+  width: 500px;
+  height: 300px;
+  margin-right: 150px;
+  margin-left: 50px;
 }
 
 /*contactos*/
@@ -69,6 +332,7 @@ main .contenedor-dos {
   font-size: 35px;
 }
 .main-contactos .div-container-contactos .div-formulario form .input-group {
+  position: initial;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -136,19 +400,21 @@ main .contenedor-dos {
   /*index*/
   main .contenedor-uno {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
   }
   main .contenedor-uno .foto-de-plantas {
     display: block;
-    grid-row: span 2;
-    grid-column: span 2;
+    grid-row: span;
+    grid-column: span;
     margin-top: 55px;
   }
   /*productos*/
   main .contenedor-dos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
   }
   /*contactos*/
@@ -169,15 +435,38 @@ main .contenedor-dos {
     position: relative;
     bottom: 0;
   }
+  /*preguntas frecuentes*/
+  .main-faq div {
+    display: block;
+  }
+  .main-faq div .parrafo {
+    width: auto;
+    height: auto;
+  }
+  .main-faq div .img-uno, .main-faq div .img-dos, .main-faq div .img-tres, .main-faq div .img-cuatro {
+    margin: 10px 0px;
+    width: 100%;
+  }
 }
 /*tablet*/
 @media only screen and (min-width: 501px) and (max-width: 960px) {
+  main .contenedor-uno {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
   main .contenedor-uno .foto-de-plantas {
     display: block;
-    grid-row: span 2;
+    grid-row: span 1;
     grid-column: span 2;
     margin-top: 55px;
   }
+  main .contenedor-dos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+  /*contactos*/
   .main-contactos .div-container-contactos {
     display: block;
   }
@@ -188,19 +477,38 @@ main .contenedor-dos {
     height: 200px;
     margin-left: 100px;
   }
-  main .contenedor-uno {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+  /*preguntas frecuentes*/
+  .main-faq div .parrafo {
+    width: 300px;
   }
-  main .contenedor-dos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+  .main-faq div .img-uno {
+    width: 500px;
+    height: 250px;
+    margin-left: 0;
+    margin-top: 70px;
   }
-  .footer-dos {
+  .main-faq div .img-dos {
+    width: 400px;
+    height: 300px;
+    margin-right: 20px;
+    margin-left: 0;
+    margin-top: 70px;
+  }
+  .main-faq div .img-tres {
+    width: 400px;
+    height: 300px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .main-faq div .img-cuatro {
+    width: 500px;
+    height: 300px;
+    margin-right: 30px;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  main .footer-dos {
     width: 100%;
-    position: relative;
     bottom: 0;
   }
 }
@@ -218,144 +526,14 @@ main .contenedor-dos {
     width: 100%;
     height: 90%;
   }
+  .main-contactos .div-container-contactos {
+    display: flex;
+  }
   .footer-dos {
     width: 100%;
     position: relative;
     bottom: 0;
   }
 }
-/*reset*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: rgb(197, 219, 134);
-}
-
-/*fuentes*/
-.kalam-regular { /*fuente para textos*/
-  font-family: "Kalam", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1em;
-}
-
-.kalam-bold { /*fuentes para titulos*/
-  font-family: "Kalam", cursive;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1.5em;
-}
-
-/*header*/
-header {
-  display: flex;
-  align-items: center;
-}
-header nav {
-  background-color: rgb(43, 43, 43);
-  width: 100%;
-}
-header nav div .logo {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-header nav div div ul li .color-nav {
-  color: #bbbbbb;
-}
-header nav div div ul li .color-nav:hover {
-  color: #ffffff;
-}
-header .nav-general {
-  position: fixed;
-  top: 0px;
-}
-
-/*main*/
-main div img {
-  border-radius: 8px;
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-}
-main .contenedor-uno {
-  align-content: center;
-  margin: 20px 30px 50px 30px;
-  display: grid;
-  grid-template-columns: repeat(4, 2fr);
-  grid-template-rows: repeat(3, 1fr);
-  row-gap: 40px;
-  column-gap: 30px;
-}
-
-/*boton*/
-section .lista-botton {
-  list-style: none;
-}
-section .lista-botton .contenedor-botton {
-  font-size: 30px;
-  text-align: center;
-}
-section .lista-botton .contenedor-botton .botton-item {
-  background-color: rgb(43, 43, 43);
-}
-section .lista-botton .contenedor-botton .botton-item .boton-ver-mas {
-  text-decoration: none;
-  color: #bbbbbb;
-}
-section .lista-botton .contenedor-botton .botton-item .boton-ver-mas:hover {
-  color: #ffffff;
-}
-
-/*footer*/
-footer {
-  background-color: rgb(43, 43, 43);
-  padding: 20px 0; /*sirve para hacer mas alto el footer*/
-}
-footer .container {
-  max-width: 100%;
-  margin: 0 auto; /*esto es para que no se salga de los 1200px*/
-}
-footer .container .footer-row {
-  display: flex; /*es para que se pongan uno al lado del otro*/
-  flex-wrap: wrap; /*es para que cuando se minimice la ventana vaya bajando y no se pongan en linea*/
-}
-footer .container .footer-row .footer-links {
-  width: 25%; /*sirve para definirle un tamaño*/
-  padding: 0 15px; /*sirve para dejar espacio entre arriba y abajo y izquierda y derecha*/
-}
-footer .container .footer-row .footer-links h4 {
-  font-size: 20px;
-  color: #ffffff;
-  margin-bottom: 25px; /*es una separacion hacia abajo de 25px*/
-  font-weight: 500; /*sirve para que no se vea tan gruesa nuestra letra*/
-  border-bottom: 2px solid rgb(197, 219, 134); /*sirve para ponerle una linea debajo*/
-  padding-bottom: 10px; /*sirve para separar la linea que agregamos anteriormente de */
-  display: inline-block; /*sirve para que la linea solo ocupe el ancho de mi letra*/
-}
-footer .container .footer-row .footer-links .lista-footer {
-  list-style: none;
-  padding: 0;
-}
-footer .container .footer-row .footer-links ul li a {
-  font-size: 18px;
-  text-decoration: none;
-  color: #bbbbbb;
-  display: block;
-  margin-bottom: 15px;
-  transition: 0.3s ease; /*agrega una animacion y una transicion*/
-}
-footer .container .footer-row .footer-links ul li a:hover {
-  color: #ffffff; /*sirve para que cuando pongas el maus arriba se ponga de otro color*/
-  padding: 6px; /*sirve para que cuando pongas el maus arriba se desplaze*/
-}
-
-/*estilos generales*/
-/*fuentes*/
 
 /*# sourceMappingURL=style.css.map */

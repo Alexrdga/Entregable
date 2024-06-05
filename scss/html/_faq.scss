@@ -7,4 +7,33 @@
     .titulo-faq{
         @include titulo(20px)
     }
+    div{
+        margin-bottom: 20px;
+        display: flex;
+        .parrafo{
+            width: 600px;
+        }
+        .img-uno{
+            width: 500px;
+            height: 250px;
+            margin-left: 150px;
+        }
+        .img-dos{
+            width: 500px;
+            height: 300px;
+            margin-right: 150px ;
+            margin-left:50px ;
+        }
+        .img-tres{
+            width: 500px;
+            height: 250px;
+            margin-left: 150px;
+        }
+        .img-cuatro{
+            width: 500px;
+            height: 300px;
+            margin-right: 150px ;
+            margin-left:50px ;
+        }
+    }
 }

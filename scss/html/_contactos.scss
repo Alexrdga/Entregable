@@ -27,16 +27,19 @@
                     font-size: 35px;
                 }
                 .input-group{
+                    position: initial;
                     display: flex;
                     flex-direction: column;
                     text-align: left;
                     label{
+                        
                         color: #283629;
                         font-size: 15px;
                         font-weight: 600;
                         margin-bottom: 15px;
                     }
                     input, textarea{
+                        
                         padding: 17px 25px;
                         margin-bottom: 20px;
                         background-color: #EDFFF0;
@@ -47,6 +50,7 @@
                     
                     input::placeholder, textarea::placeholder{
                         color: #b5cab6;
+                        
                     }
                     .btn{
                         padding: 6px 12px;
