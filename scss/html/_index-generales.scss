@@ -61,6 +61,12 @@ header{
 
 /*main*/
 main{
+    h1{
+        margin-top: 70px;
+        margin-left: 35px;
+        margin-bottom: 20px;
+        font-size: 1.5em;
+    }
     div{
         img{
             border-radius: 8px;
@@ -73,15 +79,29 @@ main{
         align-content: center;
         margin: 20px 30px 50px 30px;
         display: grid;
-        grid-template-columns: repeat(4, 2fr) ;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 2fr);
+        grid-template-rows: repeat(3, 660px);
         row-gap: 40px;
         column-gap: 30px;
         .card{
             background-color: $color-footer;
             position: initial;
-            div{
-                h5{
+            display: flex;
+            .card-img{
+                height: 300px;
+                overflow: hidden;
+                object-fit: cover;
+                img{
+                    width: 100%;
+                    display: block;
+                }
+            }
+            .card-body{
+                text-align: justify;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                h2{
                     font-family: "Kalam", cursive;
                     font-weight: 700;
                     font-style: normal;
@@ -90,6 +110,7 @@ main{
                 }
                 
                 p{
+                    flex-grow: 1;
                     font-family: "Kalam", cursive;
                     font-weight: 400;
                     font-style: normal;
@@ -116,6 +137,7 @@ main{
                         padding: 16px 24px;
                         border-radius: 6px;
                         transition: .3s;
+                        width: 100%;
                     }
                 }
                 button:hover span {
@@ -179,7 +201,7 @@ footer{
             .footer-links{
                 width: 25%; /*sirve para definirle un tamaño*/
                 padding: 0 15px;  /*sirve para dejar espacio entre arriba y abajo y izquierda y derecha*/
-                h4{
+                .titulo-footer{
                     font-size: 20px;
                     color: $color-blanco;
                     margin-bottom: 25px; /*es una separacion hacia abajo de 25px*/

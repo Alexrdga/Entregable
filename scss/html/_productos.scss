@@ -12,16 +12,30 @@ main{
         margin: 0px 30px 50px 30px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 660px);
         row-gap: 40px;
-        column-gap: 30px;
+        column-gap: 30px; 
+        
         .card{
             position: initial;
-        }
-        div{
             background-color: $color-footer;
-            div{
-                h5{
+            display: flex;
+            .card-img{
+                height: 300px;
+                overflow: hidden;
+                object-fit: cover;
+                img{
+                    width: 100%;
+                    display: block;
+                }
+            }
+            
+            .card-body{
+                text-align: justify;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                h2{
                     font-family: "Kalam", cursive;
                     font-weight: 700;
                     font-style: normal;
@@ -30,6 +44,7 @@ main{
                 }
                 
                 p{
+                    flex-grow: 1;
                     font-family: "Kalam", cursive;
                     font-weight: 400;
                     font-style: normal;
@@ -56,6 +71,7 @@ main{
                         padding: 16px 24px;
                         border-radius: 6px;
                         transition: .3s;
+                        width: 100%;
                     }
                 }
                 button:hover span {
@@ -68,3 +84,6 @@ main{
         }
     }
 }
+        
+            
+            
